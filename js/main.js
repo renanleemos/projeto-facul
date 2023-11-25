@@ -1,5 +1,5 @@
 // Products Array
-const products = [
+let products = [
   {
     id: 1,
     title: "Café com Leite",
@@ -65,6 +65,29 @@ const cartTotalElement = document.getElementById("cartTotal");
 
 // Store cart Items in Local Storage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+document.addEventListener("DOMContentLoaded", function () {
+  // Modifique o elemento "productList" aqui
+  productList.innerHTML = products
+    .map(
+      (product) => `
+    <div class="product">
+    <img src="${product.image}" alt="${product.title}" class="product-img">
+    <div class="product-info">
+      <h2 class="product-title">${product.title}</h2>
+      <p class="product-price">$${product.price.toFixed(2)}</p>
+      <a class="add-to-cart" data-id="${product.id}">Add to Cart</a>
+    </div>
+  </div>
+    `
+    )
+    .join("");
+
+  if (productList) {
+    productList.style.color = "red";
+  } else {
+    console.error('O elemento "productList" não foi encontrado');
+  }
+});
 
 //  Render Products on Page
 function renderProducts() {
