@@ -9,6 +9,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -19,16 +24,23 @@
         <a href="#" class="logo">Café Gourmet</a>
         <!-- Navbar -->
         <div class="navbar">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#home" class="nav-link">Serviços</a>
-          <a href="#home" class="nav-link">Produtos</a>
-          <a href="#home" class="nav-link">Time</a>
-          <a href="#home" class="nav-link">Reviews</a>
+          <a href="#home" class="nav-link">Início</a>
+          <a href="#services" class="nav-link">Serviços</a>
+          <a href="#products" class="nav-link">Produtos</a>
+          <a href="#team" class="nav-link">Time</a>
+          <a href="#review" class="nav-link">Avaliações</a>
+          <a href="#contact" class="nav-link">Contato</a>
         </div>
         <!-- Nav Icons -->
         <div class="nav-icons">
           <a href="#"><i class="bx bx-user"></i></a>
           <a href="#"><i class="bx bx-shopping-bag"></i></a>
+          <!-- Menu Icon -->
+          <div class="menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -93,7 +105,7 @@
         <!-- box 1 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-1.png" alt="">
+          <img src="images/product-1.png" alt="" />
           <p>4 Tipos disponíveis</p>
           <h2>Café instâtaneo</h2>
           <div class="product-info">
@@ -104,7 +116,7 @@
         <!-- box 2 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-2.png" alt="">
+          <img src="images/product-2.png" alt="" />
           <p>4 Tipos disponíveis</p>
           <h2>Café Preto</h2>
           <div class="product-info">
@@ -115,7 +127,7 @@
         <!-- box 3 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-3.png" alt="">
+          <img src="images/product-3.png" alt="" />
           <p>4 Tipos disponíveis</p>
           <h2>Café com Leite</h2>
           <div class="product-info">
@@ -126,7 +138,7 @@
         <!-- box 4 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-4.png" alt="">
+          <img src="images/product-4.png" alt="" />
           <p>4 Tipos disponíveis</p>
           <h2>Cappuccino</h2>
           <div class="product-info">
@@ -137,7 +149,7 @@
         <!-- box 5 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-5.png" alt="">
+          <img src="images/product-5.png" alt="" />
           <p>4 Tipos disponíveis</p>
           <h2>Expresso</h2>
           <div class="product-info">
@@ -148,7 +160,7 @@
         <!-- box 6 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-6.png" alt="">
+          <img src="images/product-6.png" alt="" />
           <p>4 Tipos disponíveis</p>
           <h2>Mocha</h2>
           <div class="product-info">
@@ -166,29 +178,130 @@
       <!-- Team Content -->
       <div class="team-content">
         <div class="team-box">
-          <img src="images/team-1.png" alt="">
+          <img src="images/team-1.png" alt="" />
           <h2>Sara</h2>
           <span>Líder Chefe</span>
-          <p>Como torrefadora, buscamos em todo o mundo estabelecer relacionamentos com grandes agricultores que cultivam ótimos cafés</p>
+          <p>
+            Como torrefadora, buscamos em todo o mundo estabelecer
+            relacionamentos com grandes agricultores que cultivam ótimos cafés
+          </p>
         </div>
         <div class="team-box">
-          <img src="images/team-2.png" alt="">
+          <img src="images/team-2.png" alt="" />
           <h2>Selena</h2>
           <span>Colíder Chefe</span>
-          <p>Como torrefadora, buscamos em todo o mundo estabelecer relacionamentos com grandes agricultores que cultivam ótimos cafés</p>
+          <p>
+            Como torrefadora, buscamos em todo o mundo estabelecer
+            relacionamentos com grandes agricultores que cultivam ótimos cafés
+          </p>
         </div>
         <div class="team-box">
-          <img src="images/team-3.png" alt="">
+          <img src="images/team-3.png" alt="" />
           <h2>Tony</h2>
           <span>Assistente</span>
-          <p>Como torrefadora, buscamos em todo o mundo estabelecer relacionamentos com grandes agricultores que cultivam ótimos cafés</p>
+          <p>
+            Como torrefadora, buscamos em todo o mundo estabelecer
+            relacionamentos com grandes agricultores que cultivam ótimos cafés
+          </p>
         </div>
       </div>
     </section>
     <!-- Review -->
+    <section class="review container" id="review">
+      <div class="heading">
+        <h2>Avaliação dos nossos Clientes</h2>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- slide 1 -->
+          <div class="swiper-slide">
+            <div class="review-box">
+              <img src="images/review-1.jpg" alt="" />
+              <h2>Jonas</h2>
+              <span>
+                O sabor do café é impressionante, <br />sabor sutil e suave
+              </span>
+              <p>
+                o sabor do café pode variar dependendo do tipo de grão, do nível
+                de torra e do método de preparo utilizado. Algumas pessoas
+                preferem um sabor forte e ousado, enquanto outras preferem um
+                sabor mais sutil e suave.
+              </p>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide">
+            <div class="review-box">
+              <img src="images/review-2.jpg" alt="" />
+              <h2>Eddie</h2>
+              <span>
+                O sabor do café é impressionante, <br />sabor sutil e suave
+              </span>
+              <p>
+                o sabor do café pode variar dependendo do tipo de grão, do nível
+                de torra e do método de preparo utilizado. Algumas pessoas
+                preferem um sabor forte e ousado, enquanto outras preferem um
+                sabor mais sutil e suave.
+              </p>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide">
+            <div class="review-box">
+              <img src="images/review-3.jpg" alt="" />
+              <h2>Charlie</h2>
+              <span>
+                O sabor do café é impressionante, <br />sabor sutil e suave
+              </span>
+              <p>
+                o sabor do café pode variar dependendo do tipo de grão, do nível
+                de torra e do método de preparo utilizado. Algumas pessoas
+                preferem um sabor forte e ousado, enquanto outras preferem um
+                sabor mais sutil e suave.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-
+    <!-- Footer -->
+    <section class="footer container">
+      <div class="footer-box">
+        <a href="#" class="logo">Café Gourmet</a>
+        <div class="social" id="contact">
+          <a href="#"><i class="bx bx-phone"></i></a>
+          <a href="#"><i class="bx bx-envelope"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Sobre Nós</h3>
+        <a href="#">Nossa História</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-box">
+        <h3>Recursos dos Clientes</h3>
+        <a href="#">Menu</a>
+        <a href="#">Suporte</a>
+      </div>
+      <div class="footer-box">
+        <h3>Serviços</h3>
+        <a href="#">Formas de Pagamento</a>
+        <a href="#">Bandeiras</a>
+      </div>
+    </section>
+    <!-- copyright -->
+    <p class="copyright">&#169; Café Gourmet</p>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- link to JS -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
