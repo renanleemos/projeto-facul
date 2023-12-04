@@ -37,3 +37,134 @@ section {
   margin: auto;
   width: 100%;
 }
+header {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--text-color);
+  padding: 17px 20px;
+  border-radius: 2rem;
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--container-color);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.nav-link {
+  font-size: 0.88rem;
+  color: var(--text-alter-color);
+  font-family: var(--poppins-font);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-link:hover {
+  color: var(--bg-color);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.nav-icons .bx {
+  color: var(--bg-color);
+  font-size: 20px;
+}
+.home {
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+.home-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--main-color);
+}
+.home-text p {
+  max-width: 300px;
+  font-size: 0.94rem;
+  font-family: var(--poppins-font);
+  margin: 1rem 0 1.5rem;
+}
+.btn {
+  max-width: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  border-radius: 2rem;
+  background: var(--text-color);
+}
+.btn span {
+  font-family: var(--poppins-font);
+  color: var(--bg-color);
+  text-transform: uppercase;
+}
+.btn .bx {
+  font-size: 20px;
+  background: var(--second-color);
+  color: var(--bg-color);
+  padding: 5px;
+  border-radius: 50%;
+  transform: rotate(60deg);
+}
+.home-img {
+  max-width: 560px;
+  width: 100%;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+
+}
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 160px));
+  justify-content: space-between;
+  gap: 1rem;
+}
+.ser-box {
+  background: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 35px 20px;
+  border-radius: 2rem;
+}
+.ser-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.ser-box p {
+  color: var(--container-color);
+}
+.heading p{
+  max-width: 550px;
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: var(--poppins-font);
+  margin-top: 1rem;
+}
