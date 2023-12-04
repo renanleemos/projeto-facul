@@ -45,5 +45,5 @@ document.getElementById("sair").addEventListener("click", function () {
 });
 
 function irParaOutraPagina() {
-  window.location.href = "index.php";
+  window.location.href = "/index.php";
 }
