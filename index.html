@@ -18,6 +18,17 @@
   <body>
     <!-- header -->
     <header>
+      <!-- cart icon -->
+      <div class="cart">
+        <h2 class="cart-title">Carrinho</h2>
+        <div class="cart-content"></div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Pague Agora</button>
+        <i class="bx bx-x" id="close-cart"></i>
+      </div>
       <!-- Nav -->
       <div class="nav container">
         <!-- logo -->
@@ -34,8 +45,9 @@
         <!-- Nav Icons -->
         <div class="nav-icons">
           <a href="#"><i class="bx bx-user"></i></a>
-          <a href="#"><i class="bx bx-shopping-bag"></i></a>
           <a href="#" id="sair"><i class="bx bx-log-out-circle"></i></a>
+          <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+
           <!-- Menu Icon -->
           <div class="menu-icon">
             <div class="line1"></div>
@@ -106,67 +118,91 @@
         <!-- box 1 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-1.png" alt="" />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEnmfgEeETvBJg8azcLehaJZcLm4L4aseVatmqzm_VD20XuygaVDIV_2abUDalP0r4E6ZvfsNYoH3VIkAE_A60zEiA8sKRCUrBgkjAwU63NFVHZ7YNrkgMmZzftF-mr2UXh6jZsqIz9bOLAhDX9tCZu9U1r5NNvsZTGeDCsL7Dsh0FDPMSeGwsuZsZqSs/s320/product-1.png"
+            alt=""
+            class="product-img"
+          />
           <p>4 Tipos disponíveis</p>
-          <h2>Café instâtaneo</h2>
+          <h2 class="product-title">Café instâtaneo</h2>
           <div class="product-info">
-            <span>R$14</span>
-            <i class="bx bx-shopping-bag"></i>
+            <span class="price">R$14</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
           </div>
         </div>
         <!-- box 2 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-2.png" alt="" />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijZ8NNG2oqtcFCxA1xSNA-izCcYyqNebU3ChVGxvIbT9hA6BEtLS1jTmUaz5yQmvzy_ItptwF809WNfJ8H7kHqeMYyGfZNh-hFzel6dPGg3niWocoWHX_zKFTZKy8UYdbrlWqlQ2TNKocsxgetTFuKgjlCVbqkasZQfsPdC3yQ9_T-rqmTSWRoZ2JIqN8/s320/product-2.png"
+            alt=""
+            class="product-img"
+          />
           <p>4 Tipos disponíveis</p>
-          <h2>Café Preto</h2>
+          <h2 class="product-title">Café Preto</h2>
           <div class="product-info">
-            <span>R$14</span>
-            <i class="bx bx-shopping-bag"></i>
+            <span class="price">R$14</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
           </div>
         </div>
         <!-- box 3 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-3.png" alt="" />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKjwrzBkE-ghBXsqI3ftomakiODDW5rSOScB4RZ-0txodq4PTmEwYwziBF09y7FZmpiFe7BwIneTZMLfh2jn6Bg_AjPaFPfqABJxmJWp34mDzMbaWuQKsHNHC3cm-kYhB5CkwHxdebLw2zXSesjloSmrUg42MCaL7EXPNvsHP5bHsGbiMkdKuXzI_-1ZU/s320/product-3.png"
+            alt=""
+            class="product-img"
+          />
           <p>4 Tipos disponíveis</p>
-          <h2>Café com Leite</h2>
+          <h2 class="product-title">Café com Leite</h2>
           <div class="product-info">
-            <span>R$14</span>
-            <i class="bx bx-shopping-bag"></i>
+            <span class="price">R$14</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
           </div>
         </div>
         <!-- box 4 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-4.png" alt="" />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVpSc1VDXMgvHEeu1m6oShPioS-2iB6g55O81jUcot1-LLkc-FClZwUb2yyYT_rP_ExD4ksEgPASH9a0k44WFSSlIczqROXTgbrw8TbphjIPNM6ZGDUhTi53ERYkDczNIa2FB7lI5ddTJaVZ5OpsHqV8yLuPcTp7Tv7-L4KKPhx5wndNRvZ2ioGTdd-KA/s320/product-4.png"
+            alt=""
+            class="product-img"
+          />
           <p>4 Tipos disponíveis</p>
-          <h2>Cappuccino</h2>
+          <h2 class="product-title">Cappuccino</h2>
           <div class="product-info">
-            <span>R$14</span>
-            <i class="bx bx-shopping-bag"></i>
+            <span class="price">R$14</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
           </div>
         </div>
         <!-- box 5 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-5.png" alt="" />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyRuDwQbn6AK93rMUa0BtBMt-ufMhZF_DUmdg6ekxxQPGyq_c5EyuHZUYyzzBiOEc6HKA-9UZmOLMU_uGZahhRn2iuSZbv5RnWXPpS5FB4kviltneAEeke4a4LrMAfaK5aaHLTCrKjbTGBuiHzrRU0qtjiKYTVlnHdsocA-hkk1cxsMY43DL1QDLz9_ag/s320/product-5.png"
+            alt=""
+            class="product-img"
+          />
           <p>4 Tipos disponíveis</p>
-          <h2>Expresso</h2>
+          <h2 class="product-title">Expresso</h2>
           <div class="product-info">
-            <span>R$14</span>
-            <i class="bx bx-shopping-bag"></i>
+            <span class="price">R$14</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
           </div>
         </div>
         <!-- box 6 -->
         <div class="product-box">
           <i class="bx bx-heart heart-icon"></i>
-          <img src="images/product-6.png" alt="" />
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWP1v-jkvsVSqynzYSe-shrxzLwVk1pkCeodsiwUlxnK4IddHhyphenhyphenzrB1pbYRhUvT_39PGDzu6q3D-Z9mQa8uCPW4fq2VkXJwgK6Fy3TjMZhh25IfF5B38fAzaVWgKBaH77-3bwwpGDa5Tnl00HoPvNffbrVfEv6fIOeDXJkKjX1Og-tQeAjhcnMeASkCB4/s320/product-6.png"
+            alt=""
+            class="product-img"
+          />
           <p>4 Tipos disponíveis</p>
-          <h2>Mocha</h2>
+          <h2 class="product-title">Mocha</h2>
           <div class="product-info">
-            <span>R$14</span>
-            <i class="bx bx-shopping-bag"></i>
+            <span class="price">R$14</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
           </div>
         </div>
       </div>
