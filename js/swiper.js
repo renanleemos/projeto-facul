@@ -39,3 +39,11 @@ animate.reveal(".nav");
 animate.reveal(".home-text", { origin: "left" });
 animate.reveal(".home-img", { origin: "bottom" });
 animate.reveal(".ser-box, .product-box, .team-box, .footer", { interval: 100 });
+
+document.getElementById("sair").addEventListener("click", function () {
+  irParaOutraPagina();
+});
+
+function irParaOutraPagina() {
+  window.location.href = "index.php";
+}

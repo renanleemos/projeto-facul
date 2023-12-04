@@ -401,7 +401,7 @@ header {
 /* Responsive */
 @media (max-width: 1080px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .home-text h1 {
