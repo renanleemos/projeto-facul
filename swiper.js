@@ -41,9 +41,7 @@ animate.reveal(".home-img", { origin: "bottom" });
 animate.reveal(".ser-box, .product-box, .team-box, .footer", { interval: 100 });
 
 document.getElementById("sair").addEventListener("click", function () {
-  irParaOutraPagina();
+  window.location.href = 'index.php'
 });
 
-function irParaOutraPagina() {
-  window.location.href = "/index.php";
-}
+
